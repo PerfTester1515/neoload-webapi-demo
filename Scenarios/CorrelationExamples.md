@@ -26,7 +26,6 @@ Or iterate through multiple accounts
 Always correlate values that:
   
   Are generated at runtime
-  
   Appear in multiple requests (tokens, session IDs, dynamic IDs)
 
 Validate correlation via:
