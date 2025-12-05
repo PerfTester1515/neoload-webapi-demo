@@ -9,3 +9,8 @@
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
   }
 
+Approach:
+
+Use a NeoLoad extractor to capture the token value from the JSON response.
+
+Store it in a variable (e.g., ${auth_token}).
