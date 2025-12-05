@@ -24,9 +24,9 @@ Or iterate through multiple accounts
 
 ## General Guidelines
 Always correlate values that:
-Are generated at runtime
-Appear in multiple requests (tokens, session IDs, dynamic IDs)
+  Are generated at runtime
+  Appear in multiple requests (tokens, session IDs, dynamic IDs)
 
 Validate correlation via:
-Debug logs
-NeoLoad validation mode
+  Debug logs
+  NeoLoad validation mode
