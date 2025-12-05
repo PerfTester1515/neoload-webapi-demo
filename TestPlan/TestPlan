@@ -1,0 +1,73 @@
+# Performance Test Plan – NeoLoad Web + API Demo
+
+## 1. Introduction
+
+This document outlines the performance testing approach for a conceptual web + API application using NeoLoad.
+
+## 2. Test Objectives
+
+- Validate that the application can support **500 concurrent users** during business hours.
+- Ensure key transactions meet the following SLAs:
+  - Login: **< 3 seconds**
+  - Dashboard load: **< 4 seconds**
+  - View account details: **< 3 seconds**
+  - Logout: **< 2 seconds**
+- Identify bottlenecks under peak and sustained load.
+
+## 3. Scope
+
+**In scope:**
+- Web UI flows:
+  - Login → Dashboard → View Account → Logout
+- REST APIs:
+  - `POST /api/auth/login`
+  - `GET /api/accounts`
+  - `GET /api/accounts/{id}`
+
+**Out of scope:**
+- Back-office admin tools
+- Batch jobs
+
+## 4. Workload Model
+
+- **Peak load:** 500 concurrent virtual users
+- **Steady-state:** 350 concurrent users
+- **Ramp-up:** 0 → 500 users over 20 minutes
+- **Test duration:** 60 minutes steady-state + 10 minutes ramp-down
+
+User mix:
+- 60%: Login → Dashboard → View first account → Logout
+- 30%: Login → Dashboard → View multiple accounts → Logout
+- 10%: Login → Dashboard only → Logout
+
+See `WorkloadModel.md` for more details.
+
+## 5. Test Types
+
+- Smoke test (small load, short duration)
+- Load test (steady-state)
+- Stress test (beyond expected load)
+- Soak test (sustained load to check stability)
+
+## 6. SLAs & Metrics
+
+- Response time (95th percentile)
+- Error rate (< 1% of total transactions)
+- Throughput (requests/sec)
+- Resource utilization (app servers, DB) – monitored via APM/OS metrics
+
+## 7. Tools & Environment
+
+- Tool: NeoLoad
+- Protocols: HTTP/HTTPS, REST/JSON
+- Monitoring (conceptual): Dynatrace/AppDynamics/Splunk
+
+## 8. Reporting
+
+After each test, a summary report will include:
+
+- Executive summary
+- SLA compliance
+- Key charts (response times, throughput, errors)
+- Bottleneck analysis
+- Recommendations (tuning, scaling, fixes)
