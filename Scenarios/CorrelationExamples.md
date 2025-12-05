@@ -13,8 +13,7 @@ Approach:
 Use a NeoLoad extractor to capture the token value from the JSON response.
 Store it in a variable (e.g., ${auth_token})
 
-Example 2 – Dynamic Account ID
-
+##Example 2 – Dynamic Account ID
 
 Request: GET /api/accounts
 Response: Returns a list of account IDs in JSON.
