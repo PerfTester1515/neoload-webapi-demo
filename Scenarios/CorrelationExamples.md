@@ -22,7 +22,7 @@ Use NeoLoad variable policies to:
 Randomly choose an account
 Or iterate through multiple accounts
 
-General Guidelines
+## General Guidelines
 Always correlate values that:
 Are generated at runtime
 Appear in multiple requests (tokens, session IDs, dynamic IDs)
