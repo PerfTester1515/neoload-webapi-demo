@@ -27,6 +27,6 @@ Or iterate through multiple accounts
   `Are generated at runtime`
   `Appear in multiple requests (tokens, session IDs, dynamic IDs)`
 
--**Validate correlation via:**
+- **Validate correlation via:**
   `Debug logs`
   `NeoLoad validation mode`
