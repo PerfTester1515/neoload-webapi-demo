@@ -23,9 +23,9 @@ Randomly choose an account
 Or iterate through multiple accounts
 
 ## General Guidelines
-Always correlate values that:
-  Are generated at runtime
-  Appear in multiple requests (tokens, session IDs, dynamic IDs)
+- **Always correlate values that:**
+  `Are generated at runtime`
+  `Appear in multiple requests (tokens, session IDs, dynamic IDs)`
 
 Validate correlation via:
   Debug logs
