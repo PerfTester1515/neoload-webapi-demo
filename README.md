@@ -32,6 +32,14 @@ This repository contains a conceptual NeoLoad performance testing project design
 - Defining SLAs and success criteria
 - Organizing results and findings for stakeholders
 
+## 🚀 Future Enhancements
+
+- Add example NeoLoad SLA profiles  
+- Add optional Gatling comparison notes  
+- Add a sample defect log template  
+- Include API schema examples  
+- Expand correlation examples with additional patterns 
+
 ## About Me
 
 I am a Senior Performance Engineer with 15+ years of experience using tools such as LoadRunner, NeoLoad, Gatling, Dynatrace, AppDynamics, Splunk, and various messaging and database technologies.
