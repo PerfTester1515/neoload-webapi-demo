@@ -1,3 +1,4 @@
+sql 
 # Reporting Approach – Example Structure
 
 My performance reports follow a concise two-column layout:
